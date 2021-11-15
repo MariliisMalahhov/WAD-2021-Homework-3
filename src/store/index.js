@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     posts: [
       {
+        id: 1,
         author: {
           avatar:
             "https://www.writeups.org/wp-content/uploads/Gordon-Freeman-Half-Life-Portrait-1.jpg",
@@ -24,6 +25,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 2,
         author: {
           avatar:
             "https://cdn.dribbble.com/users/323571/screenshots/5412611/batman_4x.jpg",
@@ -42,6 +44,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 3,
         author: {
           avatar:
             "https://cdn.dribbble.com/users/323571/screenshots/5412611/batman_4x.jpg",
@@ -59,6 +62,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 4,
         author: {
           avatar:
             "https://cdn.dribbble.com/users/323571/screenshots/5412611/batman_4x.jpg",
@@ -77,6 +81,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 5,
         author: {
           avatar:
             "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jessica_Ennis_%28May_2010%29_cropped.jpg",
@@ -95,6 +100,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 6,
         author: {
           avatar:
             "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jessica_Ennis_%28May_2010%29_cropped.jpg",
@@ -113,6 +119,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 7,
         author: {
           avatar:
             "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jessica_Ennis_%28May_2010%29_cropped.jpg",
@@ -131,6 +138,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 8,
         author: {
           avatar:
             "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jessica_Ennis_%28May_2010%29_cropped.jpg",
@@ -148,6 +156,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 9,
         author: {
           avatar:
             "https://cdn.dribbble.com/users/323571/screenshots/5412611/batman_4x.jpg",
@@ -166,6 +175,7 @@ export default new Vuex.Store({
         },
       },
       {
+        id: 10,
         author: {
           avatar:
             "https://cdn.dribbble.com/users/323571/screenshots/5412611/batman_4x.jpg",
@@ -185,6 +195,26 @@ export default new Vuex.Store({
       },
     ],
   },
+  contacts: [
+    {
+      id: 1,
+      name: "Mariliis Malahhov",
+      email: "malahhov@ut.ee",
+      phone: "55555555",
+    },
+    {
+      id: 2,
+      name: "Hanna Britt Jõgis",
+      email: "hanna.brit.jogis@ut.ee",
+      phone: "56565656",
+    },
+    {
+      id: 3,
+      name: "Bjarne Lamczak",
+      email: "bjarne.lamczak@ut.ee",
+      phone: "57575757",
+    },
+  ],
   mutations: {},
   actions: {},
   modules: {},
