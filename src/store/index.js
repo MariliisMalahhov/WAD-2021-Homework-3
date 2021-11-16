@@ -130,8 +130,7 @@ export default new Vuex.Store({
           type: "png",
           url: "https://craigies.co.uk/wp-content/uploads/2020/06/Birthday-Cake-e1612181292233-900x1024.png",
         },
-        post_text:
-          "Happy Birthday, Annie! Thanks for all the lovely memories!",
+        post_text: "Happy Birthday, Annie! Thanks for all the lovely memories!",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
           icon_text: 25,
@@ -194,27 +193,27 @@ export default new Vuex.Store({
         },
       },
     ],
+    contacts: [
+      {
+        id: 1,
+        name: "Mariliis Malahhov",
+        email: "malahhov@ut.ee",
+        phone: "55555555",
+      },
+      {
+        id: 2,
+        name: "Hanna Brit Jõgis",
+        email: "hanna.brit.jogis@ut.ee",
+        phone: "56565656",
+      },
+      {
+        id: 3,
+        name: "Bjarne Lamczak",
+        email: "bjarne.lamczak@ut.ee",
+        phone: "57575757",
+      },
+    ],
   },
-  contacts: [
-    {
-      id: 1,
-      name: "Mariliis Malahhov",
-      email: "malahhov@ut.ee",
-      phone: "55555555",
-    },
-    {
-      id: 2,
-      name: "Hanna Brit Jõgis",
-      email: "hanna.brit.jogis@ut.ee",
-      phone: "56565656",
-    },
-    {
-      id: 3,
-      name: "Bjarne Lamczak",
-      email: "bjarne.lamczak@ut.ee",
-      phone: "57575757",
-    },
-  ],
   mutations: {},
   actions: {},
   modules: {},
