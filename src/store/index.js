@@ -204,7 +204,7 @@ export default new Vuex.Store({
     },
     {
       id: 2,
-      name: "Hanna Britt Jõgis",
+      name: "Hanna Brit Jõgis",
       email: "hanna.brit.jogis@ut.ee",
       phone: "56565656",
     },

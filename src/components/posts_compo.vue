@@ -7,9 +7,9 @@
       </div>
       <h5 class="create-time">{{ post.create - time }}</h5>
       <img class="media" :src="post.media.url" />
-      <p class="post-text">{{ post.post_text }}</p>
+      <p class="post-text">{{ post.post - text }}</p>
       <button class="like-icon">
-        <img class="url" :src="post.like_icon.url" />
+        <img class="url" :src="post.like - icon.url" />
         <div class="icon-text">{{ post.icon - text }}</div>
       </button>
     </div>
