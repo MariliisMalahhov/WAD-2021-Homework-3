@@ -5,12 +5,12 @@
         <img class="avatar" :src="post.author.avatar" />
         <h5 class="name">{{ post.author.name }}</h5>
       </div>
-      <h5 class="create-time">{{ post.create - time }}</h5>
+      <h5 class="create-time">{{ post.create_time }}</h5>
       <img class="media" :src="post.media.url" />
-      <p class="post-text">{{ post.post - text }}</p>
+      <p class="post-text">{{ post.post_text }}</p>
       <button class="like-icon">
-        <img class="url" :src="post.like - icon.url" />
-        <div class="icon-text">{{ post.icon - text }}</div>
+        <img class="url" :src="post.like_icon.url" />
+        <div class="icon-text">{{ post.icon_text }}</div>
       </button>
     </div>
   </div>
