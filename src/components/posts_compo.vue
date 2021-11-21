@@ -8,7 +8,7 @@
       <h5 class="create-time">{{ post.create_time }}</h5>
       <img class="media" :src="post.media.url" />
       <p class="post-text">{{ post.post_text }}</p>
-      <button class="like-icon" v-on:click="IncreaseLikeNumber">
+      <button class="like-icon" v-on:click="IncreaseLikeNumber(post.id)">
         <img class="url" :src="post.like_icon.url" />
         <div class="icon-text">{{ post.like_icon.icon_text }}</div>
       </button>
@@ -24,8 +24,8 @@ export default {
     return {};
   },
   methods: {
-    IncreaseLikeNumber() {
-      this.$store.commit("IncreaseLikeNumber")
+    IncreaseLikeNumber: function(id) {
+      this.$store.commit("IncreaseLikeNumber", {id});
     },
     ResetLikeNumber() {
       this.$store.commit("ResetLikeNumber")
