@@ -17,3 +17,10 @@
     </div>
   </div>
 </template>
+<style scoped>
+div {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+</style>

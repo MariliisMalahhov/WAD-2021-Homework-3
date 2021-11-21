@@ -14,9 +14,10 @@ export default {
 
 <style>
 #footer a{
-  padding: 30px;
+  padding: 20px;
   font-weight: bold;
   color: #2c3e50;
+  
 }
 #footer a.router-link-exact-active {
   color: #2c9465;
