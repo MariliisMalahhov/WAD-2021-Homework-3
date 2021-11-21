@@ -215,10 +215,12 @@ export default new Vuex.Store({
     ],
   },
   mutations: {
-    IncreaseLikeNumber: state => {
-      state.posts.forEach(post => {
-        post.like_icon.icon_text += 1;
-      })
+    IncreaseLikeNumber(state, { id }) {
+      state.posts.forEach((post) => {
+        if (post.id == id) {
+          post.like_icon.icon_text += 1;
+        }
+      });
     },
     ResetLikeNumber: (state) => {
       state.posts.forEach((post) => {
