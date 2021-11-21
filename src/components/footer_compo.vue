@@ -11,3 +11,14 @@ export default {
   name: "footer_compo",
 };
 </script>
+
+<style>
+#footer a{
+  padding: 30px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+#footer a.router-link-exact-active {
+  color: #2c9465;
+}
+</style>

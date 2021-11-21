@@ -21,7 +21,7 @@ export default new Vuex.Store({
         post_text: "Feels like it is going to rain soon",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 15,
+          icon_text: 0,
         },
       },
       {
@@ -40,7 +40,7 @@ export default new Vuex.Store({
           "Which weighs more, a pound of feathers or a pound of bricks?\nA pound of feathers because you have to carry the feathers and \nthe weight of what you did to those poor birds",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 10,
+          icon_text: 0,
         },
       },
       {
@@ -58,7 +58,7 @@ export default new Vuex.Store({
         post_text: "Felt cute, might delete later",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 10,
+          icon_text: 0,
         },
       },
       {
@@ -77,7 +77,7 @@ export default new Vuex.Store({
           "My new kitten just can't stop playing, where does all of this energy come from?",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 10,
+          icon_text: 0,
         },
       },
       {
@@ -96,7 +96,7 @@ export default new Vuex.Store({
           "Anyone else feeling nervous about tomorrow's test? Feels like I've studied for ages.",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 10,
+          icon_text: 0,
         },
       },
       {
@@ -115,7 +115,7 @@ export default new Vuex.Store({
           "Well, that test was easier than I thought. Anyone up for celebrating tonight?",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 10,
+          icon_text: 0,
         },
       },
       {
@@ -133,7 +133,7 @@ export default new Vuex.Store({
         post_text: "Happy Birthday, Annie! Thanks for all the lovely memories!",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 25,
+          icon_text: 0,
         },
       },
       {
@@ -151,7 +151,7 @@ export default new Vuex.Store({
         post_text: "Caught this beautiful sunset tonight",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 25,
+          icon_text: 0,
         },
       },
       {
@@ -170,7 +170,7 @@ export default new Vuex.Store({
           "What are your favourite comfort foods you fall back to during stressful times? \nMine will always be a bowl of pasta with shredded cheese.",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 25,
+          icon_text: 0,
         },
       },
       {
@@ -189,7 +189,7 @@ export default new Vuex.Store({
           "First day of October! What are your favourite things about autumn?",
         like_icon: {
           url: "https://cdn-icons-png.flaticon.com/512/25/25297.png",
-          icon_text: 25,
+          icon_text: 0,
         },
       },
     ],
@@ -214,7 +214,18 @@ export default new Vuex.Store({
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    IncreaseLikeNumber: state => {
+      state.posts.forEach(post => {
+        post.like_icon.icon_text += 1;
+      })
+    },
+    ResetLikeNumber: state => {
+      state.posts.forEach(post => {
+        post.like_icon.icon_text = 0;
+      })
+    },
+  },
   actions: {},
   modules: {},
 });
