@@ -220,10 +220,10 @@ export default new Vuex.Store({
         post.like_icon.icon_text += 1;
       })
     },
-    ResetLikeNumber: state => {
-      state.posts.forEach(post => {
+    ResetLikeNumber: (state) => {
+      state.posts.forEach((post) => {
         post.like_icon.icon_text = 0;
-      })
+      });
     },
   },
   actions: {},
